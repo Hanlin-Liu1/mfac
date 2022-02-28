@@ -6,7 +6,9 @@ class MultiRotor:
 
     GRAVITY = -9.81
 
-    def __init__(self, altitude=10, velocity=0, mass=1.54, emc=10.0, dt=0.05, noise=0.1):
+    def __init__(
+        self, altitude=10, velocity=0, mass=1.54, emc=10.0, dt=0.05, noise=0.1
+    ):
         """
 
         Args:

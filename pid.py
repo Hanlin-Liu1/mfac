@@ -92,7 +92,8 @@ class PIDController:
         # Derivative term
         delta_state = state_actual - self.state_previous
         delta_state_filtered = exp_filter(
-            self.alpha, delta_state, self.delta_state_previous)
+            self.alpha, delta_state, self.delta_state_previous
+        )
         d = self.kd * delta_state_filtered
         self.state_previous = state_actual
         self.delta_state_previous = delta_state_filtered
